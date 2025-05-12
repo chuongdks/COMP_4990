@@ -1,0 +1,450 @@
+{
+    "id": "batch_req_682154c0e248819092d483e5f61fbbb8",
+    "custom_id": "request-0",
+    "response": {
+        "status_code": 200,
+        "request_id": "4bb348cdba775632f82ca07b6142d9ac",
+        "body": {
+            "id": "chatcmpl-BWCcLqBSbxByUMK3CkrGcTdTOaXnY",
+            "object": "chat.completion",
+            "created": 1747014697,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Make a Div Fill Remaining Screen Space Without Using Tables\n\nBody:  \nI'm developing a web application and want the main content area to fill the remaining vertical space of the viewport, below a header. Currently, I am using a table-based layout with the following structure:\n\nCSS:\n```css\n#page {\n  height: 100%;\n}\n#tdcontent {\n  height: 100%;\n}\n```\n\nHTML:\n```html\n<table id=\"page\">\n  <tr>\n    <td id=\"tdheader\">\n      <div id=\"header\">...</div>\n    </td>\n  </tr>\n  <tr>\n    <td id=\"tdcontent\">\n      <div id=\"content\">...</div>\n    </td>\n  </tr>\n</table>\n```\n\nThis setup works as intended: the table fills the viewport height, and the content cell adjusts accordingly. However, I would like to achieve the same layout effect without using tables, preferably with modern CSS techniques such as Flexbox or Grid. How can I structure my layout so that the content div dynamically fills the remaining space below the header?\n\nTags: <css><html><layout><flexbox><grid>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 375,
+                "completion_tokens": 242,
+                "total_tokens": 617,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c0f330819088af82d83b5279da",
+    "custom_id": "request-1",
+    "response": {
+        "status_code": 200,
+        "request_id": "2fcc50e4e2b75799478889269684d879",
+        "body": {
+            "id": "chatcmpl-BWCcLK3Rwq0SH6cRvWG2I1zLvbLzI",
+            "object": "chat.completion",
+            "created": 1747014697,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Compare Two Dates in JavaScript for Greater Than, Less Than, and Not Equal Conditions\n\nBody:  \nI'm looking for a reliable way to compare two date values in JavaScript. The dates will be inputted by users through text boxes, and I need to determine whether one date is greater than, less than, or not equal to the other. Could someone suggest an effective method or best practices for performing these comparisons? Additionally, I would appreciate any tips on handling date parsing from text inputs to ensure accurate comparisons.\n\nTags: <javascript><date><comparison><user-input>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 228,
+                "completion_tokens": 120,
+                "total_tokens": 348,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c105bc81908b4b0813a09014be",
+    "custom_id": "request-2",
+    "response": {
+        "status_code": 200,
+        "request_id": "cb6ea85e32447153d18f8ef7535c035a",
+        "body": {
+            "id": "chatcmpl-BWCcMZV33GjL8fvT5juvBzwgE8UES",
+            "object": "chat.completion",
+            "created": 1747014698,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: Why is it discouraged to use \"for...in\" loops for Array iteration in JavaScript?\n\nBody:  \nI've heard that using \"for...in\" loops to iterate over arrays in JavaScript is not recommended, but I haven't come across a clear explanation as to why. Could someone explain the potential issues or drawbacks of using \"for...in\" with arrays? Are there better alternatives for array iteration?\n\nTags: <javascript><iteration><best-practices>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 240,
+                "completion_tokens": 96,
+                "total_tokens": 336,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c116288190a76fea14779d87b0",
+    "custom_id": "request-3",
+    "response": {
+        "status_code": 200,
+        "request_id": "a72cf46743ae9598d4f993d47ccba9cf",
+        "body": {
+            "id": "chatcmpl-BWCcMOC9nuLgjIKcm5lJV2rSo8i7f",
+            "object": "chat.completion",
+            "created": 1747014698,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Convert Throwable StackTrace to String in Java\n\nBody:  \nI'm looking for an easy and efficient way to convert the stack trace obtained from Throwable.getStackTrace() into a string representation. The goal is to display or log the complete stack trace as a readable string. What is the best approach to achieve this in Java?  \n\nAdditionally, is there a preferred method over using Throwable.printStackTrace() with a StringWriter or similar?  \n\nAny code examples or best practices would be appreciated.  \n\nTags: <java><stack-trace><logging><exception>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 219,
+                "completion_tokens": 116,
+                "total_tokens": 335,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c125c88190ac290919def2488f",
+    "custom_id": "request-4",
+    "response": {
+        "status_code": 200,
+        "request_id": "caad08d3af503ccec75eb9b701ea996c",
+        "body": {
+            "id": "chatcmpl-BWCcMmvStYiKxtgonCMKBNfkKlbDu",
+            "object": "chat.completion",
+            "created": 1747014698,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "_Title: Understanding the Purpose and Usage of 'self' in Python Class Methods\n\n_Body:  \nI'm trying to understand the role of the 'self' parameter in Python class methods. I know that 'self' refers to the specific instance of the class, but I'm unclear on why it needs to be explicitly included as the first parameter in every method. \n\nFor comparison, in Ruby, I can define a class and a method like this:\n\n```ruby\nclass MyClass\n  def my_method(name)\n    @name = name\n  end\nend\n```\n\nIn Python, however, I need to include 'self' explicitly:\n\n```python\nclass MyClass:\n    def my_method(self, name):\n        self.name = name\n```\n\nCan someone explain why Python requires 'self' to be explicitly specified in method definitions, and how it functions internally? I'm new to Python and would appreciate a clear explanation of this convention.\n\nThanks in advance!_\n\n_Tags: <python><self><object-oriented-programming><class>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 334,
+                "completion_tokens": 210,
+                "total_tokens": 544,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c137a48190a6ed046da8fc2376",
+    "custom_id": "request-5",
+    "response": {
+        "status_code": 200,
+        "request_id": "71ade050adae62223fe52a97409c0488",
+        "body": {
+            "id": "chatcmpl-BWCcNfvCflTNtkk5MeMQlrOJ7Sjk7",
+            "object": "chat.completion",
+            "created": 1747014699,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: Understanding Servlet Instantiation and Session Variable Behavior in Java Web Applications\n\nBody:  \nI'm working with a Java web server that hosts multiple servlets. I have a few questions regarding how session management and servlet instantiation work:\n\n1. When multiple users send requests to the server, and I store data in session variables via the servlet context, are these session variables shared across all users or are they unique per user? How does the server differentiate between different users to ensure session data remains separate?\n\n2. Regarding servlet instantiation: if multiple users access the same servlet, is the servlet instantiated only once (the first time any user accesses it), or is a new instance created for each user? How does the server manage servlet instances in this context?\n\nAny detailed explanation or references would be appreciated.  \n\nTags: <servlets><session-management><servlet-instances><web-application>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 330,
+                "completion_tokens": 179,
+                "total_tokens": 509,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c14594819088468cbfe8a836d1",
+    "custom_id": "request-6",
+    "response": {
+        "status_code": 200,
+        "request_id": "f424154935f7816530676fa97fe2bdb0",
+        "body": {
+            "id": "chatcmpl-BWCcJOVqDQxivtgaQb9wli3JR2WcQ",
+            "object": "chat.completion",
+            "created": 1747014695,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Represent and Use Null or None Objects in Python\n\nBody:  \nI'm trying to understand how to handle null or missing values in Python. Specifically, what is the equivalent of a null object in Python, and how do I reference or check for it in my code? Any best practices for working with null or None values would also be appreciated.\n\nTags: <python><null><none>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 202,
+                "completion_tokens": 82,
+                "total_tokens": 284,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c154008190b498447c8cc54372",
+    "custom_id": "request-7",
+    "response": {
+        "status_code": 200,
+        "request_id": "a65ea01fc487f2b91535d55cab7244fc",
+        "body": {
+            "id": "chatcmpl-BWCek7MS6JEpU9bFZriqkLhhAqC2U",
+            "object": "chat.completion",
+            "created": 1747014846,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "_Title:_\nHow to Remove an Element from a Python Dictionary Without Modifying the Original\n\n_Body:_\nI'm looking for a way to delete an element from a Python dictionary without altering the original dictionary. I know that calling `.pop()` or `del` will modify the dictionary in place and return the removed element, but I want to obtain a new dictionary that excludes the specified key, leaving the original unchanged.\n\nCurrently, I have a helper function that takes the original dictionary as input and returns a new dictionary with the specified element removed. However, I'm wondering if there's a more elegant or built-in way to achieve this, perhaps using dictionary comprehensions or other Python features.\n\nCould someone suggest a clean and efficient method to create a modified copy of a dictionary with certain keys removed, without mutating the original?\n\n_Tags:_\n<python><dictionary><copy><remove><best-practices>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 284,
+                "completion_tokens": 181,
+                "total_tokens": 465,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c16190819094791c2df5fdab6b",
+    "custom_id": "request-8",
+    "response": {
+        "status_code": 200,
+        "request_id": "cb10da85e43465f0ff81d70021129e4c",
+        "body": {
+            "id": "chatcmpl-BWCeki4PUrv8WlASLPIItIxi1NHls",
+            "object": "chat.completion",
+            "created": 1747014846,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Exit the 'END' Prompt in Git Bash When Viewing Logs\n\nBody:  \nI'm following the Git Immersion tutorial (http://gitimmersion.com/) to learn Git, and I encounter an issue when using `git log`. When viewing the log, I see the message `(END)` at the bottom of the output, which indicates that the log is being displayed in a pager (usually `less`).  \n\nMy problem is that I don't know how to proceed from this point. I can't type new commands while `(END)` is displayed, and I end up closing the Bash window and opening a new one.  \n\nHow can I exit the pager and return to the command prompt so I can continue working? Also, how can I navigate through the log if I want to scroll or search within it?  \n\nThanks in advance for your help!\n\nTags: <git><bash><git-log><less>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 292,
+                "completion_tokens": 185,
+                "total_tokens": 477,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}
+{
+    "id": "batch_req_682154c16fd08190b510f11d3d81fcf3",
+    "custom_id": "request-9",
+    "response": {
+        "status_code": 200,
+        "request_id": "ef951a2397a5ffdcbd7939a03a07da5c",
+        "body": {
+            "id": "chatcmpl-BWCekoznhEHFZ4ptAOCpHGkMzColW",
+            "object": "chat.completion",
+            "created": 1747014846,
+            "model": "gpt-4.1-nano-2025-04-14",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "Title: How to Sort an Array of JavaScript Objects by Date in Descending Order from the Current Date\n\nBody:  \nI have an array of objects in JavaScript, each containing an `id` and a `date` property, like so:\n\n```javascript\nvar array = [\n  {id: 1, date: \"Mar 12 2012 10:00:00 AM\"},\n  {id: 2, date: \"Mar 8 2012 08:00:00 AM\"}\n];\n```\n\nI want to sort this array so that the objects are ordered by their `date` property, starting with the date closest to the current date and time, and going backwards. The array could contain many objects, so I need an efficient way to perform this sort.\n\nWould using the `sort()` function with a custom comparator be appropriate here? If so, how should I implement the comparator to compare the dates correctly?\n\nTags: <javascript><datetime><sorting>",
+                        "refusal": null,
+                        "annotations": []
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 304,
+                "completion_tokens": 202,
+                "total_tokens": 506,
+                "prompt_tokens_details": {
+                    "cached_tokens": 0,
+                    "audio_tokens": 0
+                },
+                "completion_tokens_details": {
+                    "reasoning_tokens": 0,
+                    "audio_tokens": 0,
+                    "accepted_prediction_tokens": 0,
+                    "rejected_prediction_tokens": 0
+                }
+            },
+            "service_tier": "default",
+            "system_fingerprint": "fp_eede8f0d45"
+        }
+    },
+    "error": null
+}

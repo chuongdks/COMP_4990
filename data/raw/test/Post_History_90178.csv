@@ -1,0 +1,589 @@
+PostId,CreationDate,Name,Text
+"90178","2008-09-18 05:06:17","Initial Title","Make a div fill the remaining screen space"
+"90178","2008-09-18 05:06:17","Initial Body","I am currently working on a web application, where I want the content to fill the entire screen. I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%;
+    }
+    #tdcontent {
+      height: 100%;
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent>
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+Which works how I like. The table remains at 100%, and the `tdcontent` element is always less than 100%. Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 05:06:17","Initial Tags","<table><css><html>"
+"90178","2008-09-18 05:29:36","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%;
+    }
+    #tdcontent {
+      height: 100%;
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 07:54:17","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 07:54:17","Edit Tags","<css><table><html>"
+"90178","2008-09-18 18:01:24","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%."
+"90178","2008-09-29 22:13:55","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside #content would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2012-04-13 02:15:00","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-04-10 11:50:55","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-08-01 14:47:04","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+<!-- language: lang-html -->
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-12-10 16:39:51","Edit Tags","<css><html><html-table>"
+"90178","2014-02-10 10:34:11","Edit Title","Make a div fill the height of the remaining screen space"
+"90178","2015-06-22 10:20:24","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+        </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+        </td>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2015-07-15 15:37:13","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2019-01-10 06:45:57","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2019-01-29 19:09:52","Edit Tags","<html><css><html-table><flexbox>"
+"90178","2019-01-30 23:14:08","Edit Tags","<html><css><html-table>"
+"90178","2019-02-08 17:39:06","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with its height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2023-06-27 02:02:00","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false console: false babel: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%;
+      width: 100%
+    }
+
+    #tdcontent {
+      height: 100%;
+    }
+
+    #content {
+      overflow: auto;  /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+    <table id=""page"">
+      <tr>
+        <td id=""tdheader"">
+          <div id=""header"">...</div>
+        </td>
+      </tr>
+      <tr>
+        <td id=""tdcontent"">
+          <div id=""content"">...</div>
+        </td>
+      </tr>
+    </table>
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with its height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."

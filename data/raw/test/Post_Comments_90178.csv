@@ -1,0 +1,8 @@
+PostId,CreationDate,Score,Text
+"90178","2014-07-01 20:00:04","5","Actually, what you describe does not work, even with tables: if the content takes more vertical space than the screen height, the table cell and the whole table will expand beyond the screen bottom. Your content's overflow:auto will not make a scrollbar appear."
+"90178","2014-04-14 12:12:05","4","I've tried to recereate your setup - http://jsfiddle.net/ceELs/ - but its not working, what am I missed?"
+"90178","2014-09-30 09:45:49","0","@GillBates it will work after you specify height of parent element look at http://jsfiddle.net/ceELs/5/"
+"90178","2014-06-20 03:30:51","7","@Mr. Alien's answer is simple and useful, check it out [http://stackoverflow.com/a/23323175/188784](http://stackoverflow.com/a/23323175/188784)"
+"90178","2014-01-20 02:23:12","51","For anyone stumbling here in the future, you can get the desired table layout in most browsers, without the table mark-up, by using `display:table` and related properties, see [this answer](http://stackoverflow.com/a/21225247/3128209) to a very similar question."
+"90178","2022-04-18 17:54:56","4","using grid in this day (>2020) would be better, grid-template-rows: auto 1fr <- will have your desired effect, also make the grid container have a min-height to fill the page 100vh."
+"90178","2015-05-30 05:16:27","0","`.screenful: {height: 100vh}` is emerging, add `box-sizing: border-box;` to include padding."

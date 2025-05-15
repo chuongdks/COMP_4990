@@ -1,0 +1,1120 @@
+PostId,CreationDate,Name,Text
+"90178","2008-09-18 05:06:17","Initial Title","Make a div fill the remaining screen space"
+"90178","2008-09-18 05:06:17","Initial Body","I am currently working on a web application, where I want the content to fill the entire screen. I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%;
+    }
+    #tdcontent {
+      height: 100%;
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent>
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+Which works how I like. The table remains at 100%, and the `tdcontent` element is always less than 100%. Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 05:06:17","Initial Tags","<table><css><html>"
+"90178","2008-09-18 05:29:36","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%;
+    }
+    #tdcontent {
+      height: 100%;
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 07:54:17","Edit Tags","<css><table><html>"
+"90178","2008-09-18 07:54:17","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?"
+"90178","2008-09-18 18:01:24","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%."
+"90178","2008-09-29 22:13:55","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside #content would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2012-04-13 02:15:00","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required. If it is, 
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-04-10 11:50:55","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-08-01 14:47:04","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS:
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+HTML:
+
+<!-- language: lang-html -->
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+      </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+      </td>
+    </table>
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2013-12-10 16:39:51","Edit Tags","<css><html><html-table>"
+"90178","2014-02-10 10:34:11","Edit Title","Make a div fill the height of the remaining screen space"
+"90178","2015-06-22 10:20:24","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%; width: 100%
+    }
+    #tdcontent {
+      height: 100%;
+    }
+    #content {
+      overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+      <tr><td id=""tdheader"">
+        <div id=""header"">...</div>
+        </td></tr>
+      <tr><td id=""tdcontent"">
+        <div id=""content"">...</div>
+        </td>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2015-07-15 15:37:13","Edit Body","I am currently working on a web application, where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2019-01-10 06:45:57","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with it's height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2019-01-29 19:09:52","Edit Tags","<html><css><html-table><flexbox>"
+"90178","2019-01-30 23:14:08","Edit Tags","<html><css><html-table>"
+"90178","2019-02-08 17:39:06","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+        height: 100%; width: 100%
+    }
+
+    #tdcontent {
+        height: 100%;
+    }
+
+    #content {
+        overflow: auto; /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+
+    <table id=""page"">
+        <tr>
+            <td id=""tdheader"">
+                <div id=""header"">...</div>
+            </td>
+        </tr>
+        <tr>
+            <td id=""tdcontent"">
+                <div id=""content"">...</div>
+            </td>
+        </tr>
+    </table>
+
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with its height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"90178","2023-06-27 02:02:00","Edit Body","I am working on a web application where I want the content to fill the height of the entire screen.
+
+The page has a header, which contains a logo, and account information. This could be an arbitrary height. I want the content div to fill the rest of the page to the bottom.
+
+I have a header `div` and a content `div`. At the moment I am using a table for the layout like so:
+
+CSS and HTML
+
+<!-- begin snippet: js hide: false console: false babel: false -->
+
+<!-- language: lang-css -->
+
+    #page {
+      height: 100%;
+      width: 100%
+    }
+
+    #tdcontent {
+      height: 100%;
+    }
+
+    #content {
+      overflow: auto;  /* or overflow: hidden; */
+    }
+
+<!-- language: lang-html -->
+
+    <table id=""page"">
+      <tr>
+        <td id=""tdheader"">
+          <div id=""header"">...</div>
+        </td>
+      </tr>
+      <tr>
+        <td id=""tdcontent"">
+          <div id=""content"">...</div>
+        </td>
+      </tr>
+    </table>
+
+<!-- end snippet -->
+
+
+The entire height of the page is filled, and no scrolling is required.
+
+For anything inside the content div, setting `top: 0;` will put it right underneath the header. Sometimes the content will be a real table, with its height set to 100%. Putting `header` inside `content` will not allow this to work.
+
+Is there a way to achieve the same effect without using the `table`?
+
+**Update:**
+
+Elements inside the content `div` will have heights set to percentages as well. So something at 100% inside the `div` will fill it to the bottom. As will two elements at 50%.
+
+**Update 2:**
+
+For instance, if the header takes up 20% of the screen's height, a table specified at 50% inside `#content` would take up 40% of the screen space. So far, wrapping the entire thing in a table is the only thing that works."
+"492994","2009-01-29 19:14:06","Initial Title","Compare 2 dates with JavaScript"
+"492994","2009-01-29 19:14:06","Initial Body","can some one suggest a way to compare values of 2 dates greater then, less then and not in the passed using javascript. They values will be coming from text boxes
+
+Thanks"
+"492994","2009-01-29 19:14:06","Initial Tags","<date><compare>"
+"492994","2009-01-29 19:16:33","Edit Tags","<date><compare><javascript>"
+"492994","2011-07-26 11:58:32","Edit Body","Can some one suggest a way to compare values of 2 dates greater then, less then and not in the past using javascript. They values will be coming from text boxes
+
+Thanks"
+"492994","2012-08-22 01:23:17","Edit Body","Can someone suggest a way to compare the values of two dates greater than, less than, and not in the past using javascript? The values will be coming from text boxes.
+
+Thanks"
+"492994","2012-08-22 01:23:17","Edit Title","Compare dates with JavaScript"
+"492994","2012-12-05 03:01:05","Edit Body","Can someone suggest a way to compare the values of two dates greater than, less than, and not in the past using javascript? The values will be coming from text boxes."
+"492994","2015-03-20 04:29:44","Edit Body","Can someone suggest a way to compare the values of two dates greater than, less than, and not in the past using JavaScript? The values will be coming from text boxes."
+"492994","2015-03-20 04:29:44","Edit Title","Compare two dates with JavaScript"
+"492994","2015-04-27 17:40:01","Edit Tags","<javascript><date><datetime><compare>"
+"492994","2017-07-11 12:48:21","Edit Tags","<javascript><date><datetime><object><compare>"
+"492994","2017-07-11 12:48:21","Edit Body","Can someone suggest a way to compare the values of **two dates** greater than, less than, and not in the past using JavaScript? The values will be coming from text boxes..."
+"492994","2019-01-29 11:37:52","Edit Body","Can someone suggest a way to compare the values of **two dates** greater than, less than, and not in the past using JavaScript? The values will be coming from text boxes."
+"492994","2020-02-27 19:37:15","Edit Tags","<javascript><date><datetime><compare>"
+"500504","2009-02-01 09:46:38","Initial Title","JavaScript ""For ...in"" with Arrays"
+"500504","2009-02-01 09:46:38","Initial Body","I've been told not to use ""for...in"" with Arrays in JavaScript but never received a satisfactory reason as to why not. 
+
+The question is: Why is using ""for ...in"" with array iteration such a bad idea?"
+"500504","2009-02-01 09:46:38","Initial Tags","<javascript>"
+"500504","2012-11-01 10:00:34","Edit Tags","<javascript><arrays>"
+"500504","2013-04-08 16:05:25","Edit Tags","<javascript><arrays><for-loop>"
+"500504","2013-04-08 16:05:25","Edit Body","I've been told not to use ""for...in"" with Arrays in JavaScript but never received a satisfactory reason as to why not."
+"500504","2013-04-08 16:05:25","Edit Title","Why is using ""for...in"" with array iteration such a bad idea?"
+"500504","2013-07-13 01:11:44","Edit Body","I've been told not to use ""for...in"" with arrays in JavaScript. Why not?
+"
+"500504","2016-05-08 10:16:15","Edit Title","Why is using ""for...in"" with array iteration a bad idea?"
+"500504","2016-05-08 10:16:15","Edit Body","I've been told not to use `for...in` with arrays in JavaScript. Why not?
+"
+"500504","2017-03-21 20:01:58","Edit Body","I've been told not to use `for...in` with arrays in JavaScript. Why not?­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­
+"
+"500504","2017-03-22 16:13:58","Rollback Body","I've been told not to use `for...in` with arrays in JavaScript. Why not?
+"
+"500504","2018-05-01 10:58:43","Edit Tags","<javascript><arrays><loops><for-loop><iteration>"
+"500504","2020-06-25 21:28:18","Edit Tags","<javascript><arrays><loops><for-loop><for-in-loop>"
+"500504","2020-07-04 04:04:31","Rollback Tags","<javascript><arrays><loops><for-loop><iteration>"
+"500504","2020-07-04 04:05:08","Edit Title","Why is using ""for...in"" for array iteration a bad idea?"
+"1149703","2009-07-19 11:31:43","Initial Title","Stacktrace to string in Java"
+"1149703","2009-07-19 11:31:43","Initial Body","Easiest way to convert the result of Throwable.getStackTrace() to a string that depicts the stacktrace?"
+"1149703","2009-07-19 11:31:43","Initial Tags","<stack-trace><java><tostring>"
+"1149703","2011-12-15 14:43:39","Edit Body","Easiest way to convert the result of `Throwable.getStackTrace()` to a string that depicts the stacktrace?"
+"1149703","2014-08-13 03:04:35","Edit Title","How can I convert a stack trace to a string?"
+"1149703","2016-03-11 20:04:37","Edit Body","What is the easiest way to convert the result of `Throwable.getStackTrace()` to a string that depicts the stacktrace?"
+"2709821","2010-04-25 20:22:28","Initial Title","python 'self' explained"
+"2709821","2010-04-25 20:22:28","Initial Body","What is the purpose of the 'self' word in python. I understand it refers to the specific object created from that class, but i cant see why it explicitly needs to be added to very function as a parameter. To illustrate, in ruby, i could do this:
+
+    class myClass
+        def myFunc(name)
+            @name = name
+        end
+    end
+
+Which i understand, quite easily, However in python i need to include self:
+
+    class myClass:
+        def myFunc(self, name):
+            self.name = name
+
+Can anyone talk me through this? its not something ive come across in my (admittedly limited) experience.
+Any help would be appreciated."
+"2709821","2010-04-25 20:22:28","Initial Tags","<python><self><explain>"
+"2709821","2010-04-25 20:25:27","Edit Tags","<python><self>"
+"2709821","2011-11-08 08:45:54","Edit Body","What is the purpose of the 'self' word in python. I understand it refers to the specific object created from that class, but i cant see why it explicitly needs to be added to every function as a parameter. To illustrate, in ruby, i could do this:
+
+    class myClass
+        def myFunc(name)
+            @name = name
+        end
+    end
+
+Which i understand, quite easily, However in python i need to include self:
+
+    class myClass:
+        def myFunc(self, name):
+            self.name = name
+
+Can anyone talk me through this? its not something ive come across in my (admittedly limited) experience.
+Any help would be appreciated."
+"2709821","2012-07-18 09:47:27","Edit Tags","<python><class><self>"
+"2709821","2012-07-18 09:47:27","Edit Title","Python 'self' explained"
+"2709821","2012-07-18 09:47:27","Edit Body","What is the purpose of the `self` word in Python? I understand it refers to the specific object created from that class, but I can't see why it explicitly needs to be added to every function as a parameter. To illustrate, in Ruby I can do this:
+
+    class myClass
+        def myFunc(name)
+            @name = name
+        end
+    end
+
+Which I understand, quite easily. However in Python I need to include `self`:
+
+    class myClass:
+        def myFunc(self, name):
+            self.name = name
+
+Can anyone talk me through this? It is not something I've come across in my (admittedly limited) experience. Any help would be appreciated."
+"2709821","2014-07-18 12:35:56","Edit Body","What is the purpose of the `self` word in Python? I understand it refers to the specific object created from that class, but I can't see why it explicitly needs to be added to every function as a parameter. To illustrate, in Ruby I can do this:
+
+    class myClass
+        def myFunc(name)
+            @name = name
+        end
+    end
+
+Which I understand, quite easily. However in Python I need to include `self`:
+
+    class myClass:
+        def myFunc(self, name):
+            self.name = name
+
+Can anyone talk me through this? It is not something I've come across in my (admittedly limited) experience."
+"2709821","2015-01-18 16:08:23","Edit Title","What is the purpose of self in Python?"
+"2709821","2016-11-17 18:31:39","Edit Title","What is the purpose of self?"
+"2709821","2016-11-17 18:31:39","Edit Body","What is the purpose of the `self` word in Python? I understand it refers to the specific object created from that class, but I can't see why it explicitly needs to be added to every function as a parameter. To illustrate, in Ruby I can do this:
+
+<!-- language: lang-ruby -->
+
+    class myClass
+        def myFunc(name)
+            @name = name
+        end
+    end
+
+Which I understand, quite easily. However in Python I need to include `self`:
+
+    class myClass:
+        def myFunc(self, name):
+            self.name = name
+
+Can anyone talk me through this? It is not something I've come across in my (admittedly limited) experience."
+"2709821","2018-01-18 01:47:45","Edit Tags","<python><class><oop><self>"
+"2709821","2019-06-29 23:25:57","Edit Title","What is the purpose of the word 'self', in Python?"
+"2709821","2020-03-25 22:30:50","Edit Title","What is the purpose of the word 'self'?"
+"2709821","2022-04-09 09:07:36","Edit Body","What is the purpose of the `self` word in Python? I understand it refers to the specific object instance created from that class. But why does it explicitly need to be added to every function as a parameter? To illustrate, in Ruby I can do this:
+
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```
+
+However, in Python I need to include `self`:
+
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```"
+"2709821","2022-06-01 17:27:04","Edit Body","What is the purpose of `self` in Python? I understand that it refers to the specific object instance created from that class. But why does every method need it explicitly added as a parameter?
+
+To illustrate, in Ruby I can do this:
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```
+However, in Python I need to include `self`:
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```"
+"2709821","2022-07-03 03:33:16","Edit Title","What is the purpose of the `self` parameter for methods?"
+"2709821","2022-07-03 17:35:08","Edit Body","What is the purpose of `self` in Python? It refers to the specific object instance created from that class. But why does every method need it explicitly added as a parameter?
+
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+
+Conversely, in Ruby, there is no self:
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```"
+"2709821","2022-07-03 17:35:08","Edit Title","What is the `self` parameter in class methods?"
+"2709821","2022-07-03 17:40:15","Edit Body","What is the purpose of `self`? It refers to the specific object instance created from that class. But why does every method need it explicitly added as a parameter? 
+In Python:
+
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+
+Conversely, in Ruby, there is no `self`:
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```"
+"2709821","2022-07-03 17:45:22","Edit Body","What is the purpose of `self`? It refers to the specific object instance created from a class. But why must every method explicitly include `self` as a parameter? 
+In Python:
+
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+
+Conversely, in Ruby, there is no `self`:
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```"
+"2709821","2022-07-03 17:50:42","Edit Body","`self` refers to the specific object instance created from a class. But why must every method explicitly include `self` as a parameter?
+
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+
+Conversely, in Ruby, there is no `self`:
+```ruby
+class MyClass
+    def func(name)
+        @name = name
+    end
+end
+```"
+"2709821","2022-09-05 06:35:45","Edit Title","Why do instance methods require a `self` parameter?"
+"2709821","2022-09-05 06:42:41","Edit Body","Consider this example:
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+I know that `self` refers to the specific instance of `MyClass`. But why must `func` explicitly include `self` as a parameter? Why do we need to use `self` in the method's code? Some other languages make this implicit, or use special syntax instead."
+"2709821","2022-09-05 06:52:42","Edit Title","What is the purpose of the `self` parameter? Why is it needed?"
+"2709821","2022-09-05 09:16:29","Edit Body","Consider this example:
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+I know that `self` refers to the specific instance of `MyClass`. But why must `func` explicitly include `self` as a parameter? Why do we need to use `self` in the method's code? Some other languages make this implicit, or use special syntax instead.
+
+----
+
+<sub>For a *language-agnostic* consideration of the design decision, see https://stackoverflow.com/questions/910020/.</sub>"
+"2709821","2022-09-05 09:33:29","Edit Body","Consider this example:
+```python
+class MyClass:
+    def func(self, name):
+        self.name = name
+```
+I know that `self` refers to the specific instance of `MyClass`. But why must `func` explicitly include `self` as a parameter? Why do we need to use `self` in the method's code? Some other languages make this implicit, or use special syntax instead.
+
+----
+
+<sub>For a *language-agnostic* consideration of the design decision, see https://stackoverflow.com/questions/910020/.</sub>
+
+<sub>To close *debugging questions* where OP omitted a `self` parameter for a method and got a `TypeError`, use https://stackoverflow.com/questions/23944657 instead. If OP omitted `self.` in the body of the method and got a `NameError`, consider https://stackoverflow.com/questions/5615648.</sub>"
+"3106452","2010-06-24 00:16:15","Initial Title","java servlet instantiation and session variables"
+"3106452","2010-06-24 00:16:15","Initial Body","Out of curiosity and naivety:
+
+Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am getting the servlet context and setting session variables. Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar questions,
+If there are n users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or it gets instantiated for all the users separately?
+
+Thanks,"
+"3106452","2010-06-24 00:16:15","Initial Tags","<servlets>"
+"3106452","2010-06-24 00:21:49","Edit Tags","<java><servlets>"
+"3106452","2011-08-25 00:04:35","Edit Title","How do servlets work? Instantiation, session variables and multithreading"
+"3106452","2011-08-25 00:04:35","Edit Body","Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am getting the servlet context and setting session variables. Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are *n* users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately?
+"
+"3106452","2013-04-08 11:41:41","Edit Tags","<java><session><servlets>"
+"3106452","2013-04-08 11:42:34","Edit Tags","<java><multithreading><session><servlets>"
+"3106452","2014-01-21 20:10:22","Edit Tags","<java><multithreading><session><servlets><session-variables>"
+"3106452","2015-02-23 14:54:25","Edit Body","Suppose, I have a webserver which holds numerous `Servlets`. For information passing among those `Servlets` I am getting the `Servlets` context and setting session variables. 
+
+Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are `*n*` users accessing a particular `Servlets`, then this `Servlets` gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately?
+"
+"3106452","2015-07-08 09:04:02","Edit Title","How do servlets work? Instantiation, shared variables and multithreading"
+"3106452","2016-08-17 12:27:33","Edit Title","How do servlets work? Instantiation, sessions, shared variables and multithreading"
+"3106452","2016-11-30 11:18:35","Edit Body","Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am setting session and instance variables.
+
+Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are `n` users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately? In other words, what happens to the instance variables?"
+"3106452","2016-11-30 11:18:35","Edit Tags","<java><multithreading><servlets><session-variables><instance-variables>"
+"3106452","2017-03-21 20:31:45","Edit Body","Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am setting session and instance variables.­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­­
+
+Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are `n` users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately? In other words, what happens to the instance variables?"
+"3106452","2017-03-22 16:22:02","Rollback Body","Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am setting session and instance variables.
+
+Now, if 2 or more users send request to this server then what happens to the session variables? Will they all be common for all the users or they will be different for each user. If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are `n` users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately? In other words, what happens to the instance variables?"
+"3106452","2020-04-19 11:32:28","Edit Body","Suppose, I have a webserver which holds numerous servlets. For information passing among those servlets I am setting session and instance variables.
+
+Now, if 2 or more users send request to this server then what happens to the session variables?   
+Will they all be common for all the users or they will be different for each user?  
+If they are different, then how was the server able to differentiate between different users?
+
+One more similar question, if there are `n` users accessing a particular servlet, then this servlet gets instantiated only the first time the first user accessed it or does it get instantiated for all the users separately?   
+In other words, what happens to the instance variables?"
+"3289601","2010-07-20 11:53:41","Initial Title","nulls object in Python?"
+"3289601","2010-07-20 11:53:41","Initial Body","How do I refer to the null object in Python?"
+"3289601","2010-07-20 11:53:41","Initial Tags","<python><null>"
+"3289601","2013-03-14 17:18:54","Edit Title","null object in Python?"
+"3289601","2020-06-20 14:50:12","Edit Title","Referring to the null object in Python"
+"3289601","2022-03-13 10:36:15","Edit Tags","<python><python-3.x><object><null><interpreted-language>"
+"3289601","2022-08-23 07:20:02","Edit Title","Null object in Python"
+"3289601","2022-08-23 07:20:02","Edit Body","How do I refer to the [null object][null_ptr] in Python?
+
+[null_ptr]: https://en.wikipedia.org/wiki/Null_pointer"
+"3289601","2022-08-23 07:20:02","Edit Tags","<python><object><null>"
+"5844672","2011-04-30 21:20:57","Initial Tags","<python><dictionary><remove>"
+"5844672","2011-04-30 21:20:57","Initial Body","Is there a way to delete an element from a dictionary in python?
+
+I know i can just call `.pop` on the dictionary, but that returns the element that was removed. What im looking for is something returns the dictionary *minus* the element in question. 
+
+At present i have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the element removed, i just wondered whether there was more elegant solution?"
+"5844672","2011-04-30 21:20:57","Initial Title","Delete an element from a dictionary"
+"5844672","2011-04-30 21:24:04","Edit Body","Is there a way to delete an element from a dictionary in Python?
+
+I know I can just call `.pop` on the dictionary, but that returns the element that was removed. What I'm looking for is something returns the dictionary *minus* the element in question. 
+
+At present I have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the element removed, Is there a more elegant solution?"
+"5844672","2011-04-30 21:24:04","Edit Tags","<python><dictionary>"
+"5844672","2012-04-25 15:58:23","Edit Body","> **Possible Duplicate:**  
+> [Best method to delete an item from a dict](http://stackoverflow.com/questions/5713218/best-method-to-delete-an-item-from-a-dict)  
+
+<!-- End of automatically inserted text -->
+
+Is there a way to delete an element from a dictionary in Python?
+
+I know I can just call `.pop` on the dictionary, but that returns the element that was removed. What I'm looking for is something returns the dictionary *minus* the element in question. 
+
+At present I have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the element removed, Is there a more elegant solution?"
+"5844672","2013-02-16 15:18:33","Edit Body","Is there a way to delete an element from a dictionary in Python?
+
+I know I can just call `.pop` on the dictionary, but that returns the element that was removed. What I'm looking for is something returns the dictionary *minus* the element in question. 
+
+At present I have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the element removed, Is there a more elegant solution?"
+"5844672","2017-01-25 22:40:38","Edit Body","Is there a way to delete an item from a dictionary in Python?
+
+I know I can just call `.pop` on the dictionary, but that returns the item that was removed. What I'm looking for is something returns the dictionary *minus* the element in question. 
+
+At present I have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the item removed, Is there a more elegant solution?"
+"5844672","2017-01-25 22:40:38","Edit Title","Delete an item from a dictionary"
+"5844672","2018-05-14 22:58:10","Edit Tags","<python><dictionary><copy><pop><del>"
+"5844672","2018-05-14 22:58:10","Edit Title","Make copy of a dictionary, deleting an item"
+"5844672","2018-05-15 00:28:50","Edit Body","> ###Delete key from dictionary without modifying the original to return a copy
+
+Is there a way to delete an item from a dictionary in Python?
+
+I know I can just call `.pop` on the dictionary, but that returns the item that was removed. What I'm looking for is something returns the dictionary *minus* the element in question. 
+
+At present I have a helper function that accepts the dictionary in question as parameter, and then returns a dictionary with the item removed, Is there a more elegant solution?"
+"5844672","2018-05-15 00:28:50","Edit Title","Delete key from dictionary"
+"5844672","2018-05-15 01:10:33","Edit Body","Is there a way to delete an item from a dictionary in Python?
+
+"
+"5844672","2018-05-15 01:10:33","Edit Tags","<python><dictionary><pop><del>"
+"5844672","2018-05-15 01:14:05","Edit Title","Delete an element from a dictionary"
+"5844672","2018-05-15 01:14:05","Edit Body","Is there a way to delete an item from a dictionary in Python?
+
+Additionally, how can I delete an item from a dictionary to return a copy (i.e., not modifying the original)?
+
+"
+"5844672","2019-08-22 16:20:41","Edit Tags","<python><dictionary><del>"
+"5844672","2022-06-06 05:13:07","Edit Body","How do I delete an item from a dictionary in Python?
+
+Without modifying the original dictionary, how do I obtain another dict with the item removed?
+
+"
+"5844672","2023-02-12 10:39:39","Edit Body","How do I delete an item from a dictionary in Python?
+
+Without modifying the original dictionary, how do I obtain another dict with the item removed?
+
+----
+
+<sub>See also https://stackoverflow.com/questions/11277432 for the specific issue of removing an item (by key) that may not already be present.</sub>
+
+"
+"5844672","2025-03-24 16:45:10","Edit Body","1. How do I delete an item from a dictionary in Python?
+2. **Without** modifying the original dictionary, how do I obtain **another** dictionary with the item removed?
+
+----
+
+<sub>See also https://stackoverflow.com/questions/11277432 for the specific issue of removing an item (by key) that may not already be present.</sub>
+
+"
+"9483757","2012-02-28 14:30:17","Initial Title","END in git bash"
+"9483757","2012-02-28 14:30:17","Initial Body","I'm trying to learn git with the help of git immersion http://gitimmersion.com/
+But there's one thing that frustrates me whenever I use git log.
+
+![enter image description here][1]
+
+
+  [1]: https://i.sstatic.net/yJ0Ms.png
+
+
+I can't figure out what to do next when I encounter this (END) word. I can't type any commands and I end up closing the current bash and open another. How do I type in the next command that I want to use?"
+"9483757","2012-02-28 14:30:17","Initial Tags","<git>"
+"9483757","2014-05-16 15:20:52","Edit Title","How to exit git log?"
+"9483757","2017-08-01 08:11:16","Edit Title","How to exit git log or git diff?"
+"9483757","2017-08-01 08:11:16","Edit Body","I'm trying to learn Git with the help of [Git Immersion](http://gitimmersion.com/). There's one thing that frustrates me whenever I use `git log` or `git diff`:
+
+![Git log shows (END) marker][1]
+
+  [1]: https://i.sstatic.net/yJ0Ms.png
+
+I can't figure out what to do next when I encounter this `(END)` word. I can't type any commands and I end up closing the current bash and open another. How do I type in the next command that I want to use?"
+"9483757","2017-08-01 08:11:16","Edit Tags","<git><git-diff><git-log>"
+"9483757","2019-08-05 19:14:49","Edit Title","How to exit git log or git diff"
+"9483757","2019-08-05 19:14:49","Edit Body","I'm trying to learn Git with the help of [Git Immersion][1]. There's one thing that frustrates me whenever I use `git log` or `git diff`:
+
+![Git log shows (END) marker][2]
+
+I can't figure out what to do next when I encounter this `(END)` word. I can't type any commands, and I end up closing the current Bash window and open another. How do I type in the next command that I want to use?
+
+  [1]: http://gitimmersion.com/
+  [2]: https://i.sstatic.net/yJ0Ms.png
+"
+"9483757","2020-04-17 17:57:11","Edit Body","I'm trying to learn Git with the help of [Git Immersion][1].   
+There's one thing that frustrates me whenever I use `git log` or `git diff`:
+
+![Git log shows (END) marker][2]
+
+I can't figure out what to do next when I encounter this `(END)` word.
+
+I can't type any commands, and I end up closing the current Bash window and open another. How do I type in the next command that I want to use?
+
+  [1]: http://gitimmersion.com/
+  [2]: https://i.sstatic.net/yJ0Ms.png
+"
+"10123953","2012-04-12 12:53:03","Initial Title","Sort Javascript Object Array By Date"
+"10123953","2012-04-12 12:53:03","Initial Body","Say I have an array of a few objects:
+
+    var array = [{id: 1 date: Mar 12 2012 10:00:00 AM}{id: 2 date: Mar 8 2012 08:00:00 AM}];
+
+How can I sort this array by the date element in order from the date closest to the current date and time down? Keep in mind that the array may have many objects, but for the sake of simplicity I used 2.
+
+Would I use the sort function and a custom comparator?"
+"10123953","2012-04-12 12:53:03","Initial Tags","<javascript><datetime>"
+"10123953","2012-04-13 02:45:07","Edit Body","Say I have an array of a few objects:
+
+    var array = [{id: 1 date: Mar 12 2012 10:00:00 AM}{id: 2 date: Mar 8 2012 08:00:00 AM}];
+
+How can I sort this array by the date element in order from the date closest to the current date and time down? Keep in mind that the array may have many objects, but for the sake of simplicity I used 2.
+
+Would I use the sort function and a custom comparator?
+
+**UPDATE**
+
+In my specific case, I wanted the dates arranged from the most recent to the oldest. It ended up that I had to reverse the simple function's logic as so:
+
+    array.sort(function(a, b) {
+		a = new Date(a.dateModified);
+		b = new Date(b.dateModified);
+		return a>b ? -1 : a<b ? 1 : 0;
+	});
+
+This sorts the dates from the most recent."
+"10123953","2015-12-08 21:40:52","Edit Body","Say I have an array of a few objects:
+
+    var array = [{id: 1, date: Mar 12 2012 10:00:00 AM}, {id: 2, date: Mar 8 2012 08:00:00 AM}];
+
+How can I sort this array by the date element in order from the date closest to the current date and time down? Keep in mind that the array may have many objects, but for the sake of simplicity I used 2.
+
+Would I use the sort function and a custom comparator?
+
+**UPDATE**
+
+In my specific case, I wanted the dates arranged from the most recent to the oldest. It ended up that I had to reverse the simple function's logic as so:
+
+    array.sort(function(a, b) {
+		a = new Date(a.dateModified);
+		b = new Date(b.dateModified);
+		return a>b ? -1 : a<b ? 1 : 0;
+	});
+
+This sorts the dates from the most recent."
+"10123953","2019-07-11 15:33:54","Edit Title","Sort array by a date property"
+"10123953","2019-07-11 15:33:54","Edit Body","Say I have an array of a few objects:
+
+    var array = [{id: 1, date: Mar 12 2012 10:00:00 AM}, {id: 2, date: Mar 8 2012 08:00:00 AM}];
+
+How can I sort this array by the date element in order from the date closest to the current date and time down? Keep in mind that the array may have many objects, but for the sake of simplicity I used 2.
+
+Would I use the sort function and a custom comparator?
+
+**UPDATE:**
+
+In my specific case, I wanted the dates arranged from the most recent to the oldest. It ended up that I had to reverse the simple function's logic as so:
+
+    array.sort(function(a, b) {
+		a = new Date(a.dateModified);
+		b = new Date(b.dateModified);
+		return a>b ? -1 : a<b ? 1 : 0;
+	});
+
+This sorts the dates from the most recent."
+"10123953","2019-07-19 04:33:16","Edit Title","How to sort an array by a date property"
+"10123953","2020-07-11 09:21:34","Edit Body","Say I have an array of a few objects:
+
+    var array = [{id: 1, date: Mar 12 2012 10:00:00 AM}, {id: 2, date: Mar 8 2012 08:00:00 AM}];
+
+How can I sort this array by the date element in order from the date closest to the current date and time down? Keep in mind that the array may have many objects, but for the sake of simplicity I used 2.
+
+Would I use the sort function and a custom comparator?"
+"10123953","2021-01-21 10:07:15","Edit Title","How to sort an object array by date property?"
